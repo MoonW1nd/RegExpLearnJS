@@ -1,0 +1,14 @@
+.Logo {
+  font-size: 1em;
+  margin: 0;
+  width: 120px; }
+  .Logo-Intro {
+    font-size: 0.9em;
+    margin: 0; }
+  .Logo-Line {
+    margin: 0;
+    position: relative; }
+    .Logo-Line_second {
+      left: 0.9em; }
+  .Logo-Braces {
+    color: red; }

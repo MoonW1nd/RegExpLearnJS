@@ -1,0 +1,23 @@
+.Logo {
+	font-size: 1em;
+	margin: 0;
+	width: 120px;
+
+	&-Intro {
+		font-size: 0.9em;
+		margin: 0;
+	}
+
+	&-Line {
+		margin: 0;
+		position: relative;
+
+		&_second {
+			left: 0.9em;
+		}
+	}
+
+	&-Braces {
+		color: red;
+	}
+}
