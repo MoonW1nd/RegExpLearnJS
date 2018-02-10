@@ -1,17 +1,18 @@
-.Paper {
-	padding: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 80vw;
-
-	&-TextField {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-}
 .Lesson {
 	display: flex;
 	justify-content: center;
+	&-Paper {
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 80vw;
+	}
+}
+
+.Paper-TextField {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
