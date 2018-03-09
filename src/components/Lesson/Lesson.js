@@ -4,6 +4,13 @@ import Paper from 'material-ui/Paper';
 import './Lesson.css';
 
 export default class Lesson extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: '',
+    };
+  }
+
   render() {
     return (
       <section className='Lesson'>
@@ -24,10 +31,24 @@ export default class Lesson extends React.Component {
             style={{
               width: '50vw',
             }}
+            onChange={evt => this.updateInputValue(evt)}
           />
           <p></p>
         </Paper>
       </section>
     );
+  }
+
+  updateInputValue(e) {
+    const regExp = new RegExp(`${e.target.value}`, 'g');
+    const target = document.querySelector('.Information');
+    const string = target.textContent;
+    target.innerHTML =
+      string.replace(regExp, str =>
+        `<span>${str}</span>`);
+
+    this.setState({
+      inputValue: e.target.value,
+    });
   }
 }
